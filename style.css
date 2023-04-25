@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #2d2a2a99;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1818;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+.container .result {
+    height: 30%;
+    background-color: #1b1818;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.container .result span:first-child {
+    color: #cccccc75;
+    font-size: 1.5rem;
+}
+
+.container .result span:last-child {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.container .result span {
+    margin-right: 20px;
+}
+
+.container .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 2fr);
+    gap: 10px;
+    padding: 15px;
+    font-size: 22px;
+    height: 70%;
+    padding: 20px;
+}
+
+.container .buttons div {
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.buttons .num {
+    background-color: #272525;
+    color: #fff;
+    border-radius: 50%;
+
+}
+
+.buttons .top {
+    background-color: #979191;
+    color: #000;
+    border-radius: 50%;
+}
+
+.buttons .right {
+    background-color: #e6a844;
+    color: #000;
+    border-radius: 50%;
+}
+
+.buttons .zero {
+    grid-column: 1 / span 2;
+    background-color: #272525;
+    color: #fff;
+    border-radius: 135px;
+}
+
+.buttons .num:hover,
+.buttons .zero:hover {
+    background-color: #777
+}
+
+.buttons .top:hover,
+.buttons .right:hover{
+    background-color: #c6c4c4
+}
